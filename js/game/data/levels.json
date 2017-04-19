@@ -1,0 +1,17 @@
+[
+  {
+    "levelName": "easy",
+    "size": 7,
+    "delay": 2000
+  },
+  {
+    "levelName": "medium",
+    "size": 10,
+    "delay": 3500
+  },
+  {
+    "levelName": "hard",
+    "size": 13,
+    "delay": 6000
+  }
+]

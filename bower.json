@@ -1,0 +1,22 @@
+{
+  "name": "cardgamev2",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "tagurkova <tatyana769@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "*"
+  }
+}

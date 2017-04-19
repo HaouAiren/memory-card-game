@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Memory Cards Game</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+            <div class="masthead clearfix">
+                <div class="inner">
+                    <h3 class="masthead-brand">Memory Cards Game</h3>
+                    <nav>
+                        <ul class="nav masthead-nav">
+                            <li class="game-nav"><a href="#" >Home</a></li>
+                            <li class="score-nav"><a href="#">Scores</a></li>
+                            <li class="feedback-nav"><a href="#" >Feedback</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!--HOME TAB-->
+            <div class="game-panel">
+                <div class="game-description">
+                    <div class="inner cover text">
+                        <h1 class="cover-heading">Memory Cards Game</h1>
+                        <p class="lead">Great exercise to train memory. It's also a good practice to help you
+                            memorize the locations of different cards and you will be quickly surprised by your progress. This game
+                            will reinforce and boost your visual memory storage capacity in a playful way.</p>
+                        <p class="lead btn-group" id="start-game">
+                            <a href="#" class="btn btn-lg btn-default" data-level="easy">Easy</a>
+                            <a href="#" class="btn btn-lg btn-default" data-level="medium">Medium</a>
+                            <a href="#" class="btn btn-lg btn-default" data-level="hard">Hard</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="game-frame">
+                        <div class="col-xs-4 col-md-4 card-template card-element flip-container">
+                            <a href="#" class="thumbnail flipper" data-index="" data-number="">
+                                <img class="card back" src="img/back.png" alt="card" />
+                                <span class="card front"><p class="number"></p></span>
+                            </a>
+                        </div>
+                        <div class="container">
+                            <div class="row"></div>
+                            <button type="button" class="btn btn-lg btn-default" data-dismiss="modal" id="start">START</button>
+                            <button type="button" class="btn btn-lg btn-default" data-dismiss="modal" id="change-level">Change level</button>
+                        </div>
+
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="gameModal" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Results</h4>
+                            </div>
+                            <div class="modal-body">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal" id="retry">Retry</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--SCORES TAB-->
+            <div class="score-panel" style="display: none;">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>User Name</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td>Gamer1</td>
+                            <td>23s</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td>Gamer2</td>
+                            <td>40s</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="feedback-panel" style="display: none;">
+                <div class="jumbotron">
+                    <h1>Wanna help us?</h1>
+                    <p>We would like to know your opinion or your advice about our game</p>
+                    <p><a href="mailto:tatyana769@gmail.com">Click to email</a></p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+
+
+
+<script src="js/game/Card.js"></script>
+<script src="js/game/Deck.js"></script>
+<script src="js/game/GameField.js"></script>
+<script src="js/game/ModalWindow.js"></script>
+<script src="js/game/MemoryCardGame.js"></script>
+<script src="js/PageMgr.js"></script>
+<script src="js/FeedbackMgr.js"></script>
+<script src="js/ScoreMgr.js"></script>
+<script src="js/GameMgr.js"></script>
+
+<script src="js/AppMgr.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
